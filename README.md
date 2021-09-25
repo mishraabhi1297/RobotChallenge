@@ -10,4 +10,35 @@ RIGHT           -> this will turn the robot 90 degrees to the right
 REPORT          -> this will report the whereabouts of all the robots, including which one is active
 EXIT            -> this will exit the application
 3. The only additional command is EXIT to exit the application
-4. Please see the TestCommands.txt file to see what output will be returned as a result of all the commands entered  
+
+### Example Input and Output
+
+1. 
+Input:
+PLACE 1,2,WEST
+MOVE
+MOVE
+RIGHT 
+REPORT
+
+Output:
+Name: ROBOT 1 (0,2,NORTH) Active
+
+2.
+Input:
+PLACE 1,2,SOUTH
+PLACE 3,3,WEST
+MOVE
+LEFT
+MOVE
+PLACE 3,2,NORTH
+PLACE 3,5,WEST
+ROBOT 3
+REPORT
+
+Output:
+Name: ROBOT 1 (2,1,EAST)
+Name: ROBOT 2 (3,3,WEST)
+Name: ROBOT 3 (3,2,NORTH) Active
+
+
